@@ -1,13 +1,13 @@
 import random
 
-voorvoegsels = ('Super', 'Mega', 'Ultra', 'Geweldige', 'Toffe', 'Snelle', 'Slimme', 'Magische')
-achtervoegsels = ('Coder', 'Ninja', 'Expert', 'Gebruiker', 'Gamer', 'Ster')
+beschrijvingen = ('Super', 'Mega', 'Ultra', 'Geweldige', 'Toffe', 'Snelle', 'Slimme', 'Magische')
+rollen = ('Coder', 'Ninja', 'Expert', 'Gebruiker', 'Gamer', 'Ster')
 
 def genereer_gebruikersnaam():
-    voorvoegsel = random.choice(voorvoegsels)
-    achtervoegsel = random.choice(achtervoegsels)
+    beschrijving = random.choice(beschrijvingen)
+    rol = random.choice(rollen)
 
-    gebruikersnaam = voorvoegsel + achtervoegsel
+    gebruikersnaam = beschrijving + rol
     return gebruikersnaam
 
 print("10 willekeurige gebruikersnamen:")
